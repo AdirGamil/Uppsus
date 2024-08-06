@@ -1,0 +1,14 @@
+ /* .main-img-container {
+     display: grid;
+     height: calc(100vh - 75px - 71px);
+     grid-template-columns: 60vw;
+     place-content: center;
+     justify-items: center;
+     padding-block: 2rem;
+    }
+    
+    .home-img {
+        opacity: 0.7;
+        width: 100%;
+        max-width: 700px;
+ } */

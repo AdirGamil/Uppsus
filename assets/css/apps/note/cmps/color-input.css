@@ -1,0 +1,25 @@
+.color-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7em;
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.item {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: scale(1.2);
+}

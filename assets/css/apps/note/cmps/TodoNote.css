@@ -1,0 +1,19 @@
+.todo-note {
+  text-align: center;
+}
+
+.todo-li {
+  list-style: none;
+  font-size: 1.2em;
+}
+
+.todo-checkbox {
+  cursor: pointer;
+}
+.todo-checkbox:hover {
+  transform: scale(1.1);
+}
+
+.fa-check-square {
+  color: green;
+}

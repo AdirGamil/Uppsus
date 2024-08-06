@@ -1,0 +1,141 @@
+header {
+    background: #e9eef6;
+    border-bottom: 2px solid white;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 0.875rem;
+}
+
+.app-header-right-handside {
+    display: grid;
+    grid-auto-flow: column;
+    padding-inline-end: 1rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.app-header button {
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+
+}
+
+.apps-icon {
+    background: none;
+    color: #5f6368;
+    position: relative;
+
+}
+
+.apps-icon:hover {
+    background-color: #cecccc;
+}
+
+.user-icon {
+    background-color: #689f38;
+    color: white;
+    font-family: Roboto-Regular;
+
+    position: relative;
+}
+
+.user-icon:hover {
+    outline: #e8eaed solid 3px;
+}
+
+
+.app-header-right-handside .home.active, .about.active {
+    color: #919191;
+    font-weight: bold;
+    text-decoration: overline;
+
+}
+
+.app-header-right-handside .home:hover, .about:hover {
+    outline: #cecccc solid 8px;
+    background-color: #cecccc;
+    border-radius: 5px;
+
+}
+
+.main-nav {
+    z-index: 3;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    position: absolute;
+    right: 1rem;
+    top: 5rem;
+
+    padding: 2rem;
+    background-color: #f8fafd;
+    border: 10px solid #e9eef6;
+    border-radius: 25px;
+}
+
+
+.app-header-right-handside img {
+    padding: 10px;
+    height: 50px;
+}
+
+.main-nav a {
+    padding-bottom: 5px;
+    width: 71px;
+    text-align: center;
+    height: fit-content;
+    display: grid;
+    justify-content: center;
+    place-content: center;
+}
+
+.main-nav a:hover {
+    border-radius: 10px;
+    background-color: #e9eef6;
+
+}
+
+.display-none {
+    display: none;    
+}
+
+.user-icon:hover{
+    .user-info{
+        /* z-index: 2; */
+        display: grid;
+    }
+}
+
+.user-icon > .user-info{
+    position: absolute;
+    right: 0;
+    top: 120%;
+    background-color: rgba(25, 25, 25, 0.595);
+    display: none;
+    width: max-content;
+    padding: 0.5rem;
+    gap: 0.2rem;
+    justify-items: start;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.user-info > .user-name, .user-mail{
+    color: #a6a9ad;
+}
+
+.user-info > .user-name{
+    font-weight: 400;
+}
+
+
+.logo {
+    height: 40px;
+}

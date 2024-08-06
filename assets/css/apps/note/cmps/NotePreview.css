@@ -1,0 +1,72 @@
+.note-list {
+  column-count: 1;
+  column-gap: 1em;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.pinned-notes {
+  border: 1px solid lightgray;
+}
+
+.note-pin-title {
+  position: absolute;
+  top: 180px;
+}
+
+.note-list > * {
+  break-inside: avoid;
+}
+
+.note {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 0 1em;
+  padding: 1em;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.note-title {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+}
+
+.note-txt {
+  padding-bottom: 20px;
+}
+
+.note .note-btns {
+  opacity: 0;
+  transition: 200ms ease;
+}
+
+.note:hover .note-btns {
+  opacity: 1;
+}
+
+.note-btns {
+  text-align: right;
+}
+
+.note-btn {
+  margin-inline-start: 0.5em;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .note-list {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .note-list {
+    column-count: 3;
+  }
+}
